@@ -1,0 +1,84 @@
+.cal {
+    width: 375px;
+    height: 667px;
+    background-color: #ff7f00;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+td {
+    height: 90px;
+    width: 90px;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    background-color: #484545;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-style: none;
+    border-radius: 50%;
+
+}
+
+#cal_space {
+    background-color: #ff7f00;
+    text-align: right;
+    font-size: 60px;
+    color: black;
+    border-radius: 5px;
+
+}
+
+input[type="button"i] {
+    -webkit-appearance: none;
+}
+
+
+
+
+
+.bd {
+    width: 98%;
+    height: 98%;
+    background: gray;
+    color: black;
+}
+
+.symbol {
+    width: 98%;
+    height: 98%;
+    background: darkgray;
+    color: black;
+    font-size: 30px;
+    border: solid 1px #bfb9b9;
+
+}
+
+.mark {
+    width: 98%;
+    height: 98%;
+    background: #262626;
+    font-size: 40px;
+}
+
+.number {
+    width: 98%;
+    height: 98%;
+    font-size: 30px;
+}
+
+.zero {
+    text-align: left;
+    border-radius: 50px;
+    padding-left: 30px;
+
+}

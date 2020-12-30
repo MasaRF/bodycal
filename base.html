@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Calculate</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+
+<body>
+    <div class='cal'>
+        <form name='cal_form'>
+            <table>
+                <tr>
+                    <td id='cal_space' colspan='4'><input type='text' value="0" size="12" onchange="check()">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class='bd' type="button" value="CI" onclick="bd_ci('kg')"></td>
+                    <td><input class='bd' type="button" value="BMI" onclick="bd_bmi()"></td>
+                    <td><input class='bd' type="button" value="BM" onclick="bd_bm()"></td>
+                    <td><input class='bd' type="button" value="RM" onclick="bd_rm()"></td>
+                </tr>
+                <tr>
+                    <td><input class='symbol' type='button' value='AC' onclick='all_clear()'></td>
+                    <td><input class='symbol' type='button' value='+/-' onclick='plu_mi()'></td>
+                    <td><input class='symbol' type='button' value='%' onclick="percent()"></td>
+                    <td><input class='mark' type='button' value='÷' onclick="operate('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type='button' value='7' onclick="number(7)"></td>
+                    <td><input type='button' value='8' onclick='number(8)'></td>
+                    <td><input type='button' value='9' onclick='number(9)'></td>
+                    <td><input class='mark' type='button' value='×' onclick="operate('*')"></td>
+                </tr>
+                <tr>
+                    <td><input type='button' value='4' onclick='number(4)'></td>
+                    <td><input type='button' value='5' onclick='number(5)'></td>
+                    <td><input type='button' value='6' onclick='number(6)'></td>
+                    <td><input class='mark' type='button' value='-' onclick="operate('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type='button' value='1' onclick='number(1);health()'></td>
+                    <td><input type='button' value='2' onclick='number(2);health()'></td>
+                    <td><input type='button' value='3' onclick='number(3)'></td>
+                    <td><input class='mark' type='button' value='+' onclick="operate('+')"></td>
+                </tr>
+                <tr>
+                    <td colspan='2'><input class='zero' type='button' value='0' onclick='number(0)'></td>
+                    <td><input class='symbol' type='button' value='.' onclick="number('.')"></td>
+                    <td><input class='mark' type='button' value='=' onclick="operate('=')"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script type="text/javascript" src="base.js"></script>
+</body>
+
+</html>
